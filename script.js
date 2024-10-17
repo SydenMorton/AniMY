@@ -53,15 +53,16 @@ function likeAnime(button) {
 function register() {
     const username = document.getElementById('reg-username').value.trim();
     const password = document.getElementById('reg-password').value.trim();
-    
+    const messageElement = document.getElementById('registration-message');
+
     if (username && password.length >= 6) {
-        document.getElementById('registration-message').textContent = `Пользователь ${username} зарегистрирован!`;
+        messageElement.textContent = `Регистрация успешна!`;
         // здесь можно добавить логику для сохранения пользователя
     } else {
         if (!username) {
-            alert('Пожалуйста, введите имя для регистрации!');
+            messageElement.textContent = 'Пожалуйста, введите имя для регистрации!';
         } else {
-            alert('Пароль должен содержать минимум 6 символов!');
+            messageElement.textContent = 'Пароль должен содержать минимум 6 символов!';
         }
     }
 }
