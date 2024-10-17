@@ -1,4 +1,4 @@
-﻿let currentUser = null;
+let currentUser = null;
 
 function login() {
     const username = document.getElementById('username').value.trim();
@@ -61,7 +61,7 @@ function register() {
 
 // Переключение вкладок
 document.querySelectorAll('nav a').forEach(tab => {
-    tab.addEventListener('click', function (e) {
+    tab.addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelectorAll('.tab-content').forEach(content => {
             content.classList.remove('active');
