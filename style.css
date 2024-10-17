@@ -9,17 +9,8 @@ body {
     color: #fff;
     position: relative;
     overflow: hidden;
-}
-
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('https://i.gifer.com/IrF.mp4') center center / cover no-repeat;
-    filter: blur(8px);
-    z-index: -1;
+    background: linear-gradient(135deg, #ff4b5c, #6f42c1);
+    min-height: 100vh;
 }
 
 header {
