@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Anime Community</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="active" data-tab="home">Главная</a></li>
+                <li><a href="#" data-tab="community">Сообщество</a></li>
+                <li><a href="#" data-tab="anime">Аниме</a></li>
+                <li><a href="#" data-tab="register">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="tab-content active">
+            <h2>Добро пожаловать в Anime Community!</h2>
+            <p>Здесь вы можете обсуждать любимые аниме и делиться мнениями.</p>
+        </section>
+
+        <section id="community" class="tab-content">
+            <h2>Сообщество</h2>
+            <div id="comments">
+                <div id="user-info" style="display: none;">
+                    <p id="welcome-message"></p>
+                    <button onclick="logout()">Выйти</button>
+                </div>
+                <div id="login-form" style="display: block;">
+                    <input type="text" id="username" placeholder="Ваше имя">
+                    <button onclick="login()">Войти</button>
+                </div>
+                <div id="comment-section" style="display: none;">
+                    <textarea id="comment-input" placeholder="Ваш комментарий..."></textarea>
+                    <button onclick="addComment()">Отправить</button>
+                    <div id="comment-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="anime" class="tab-content">
+            <h2>Новинки аниме</h2>
+            <div class="anime-card">
+                <h3>1. Chainsaw Man</h3>
+                <p>Молодой парень, способный превращаться в человека-цепную пилу, сражается с демонами.</p>
+                <button onclick="likeAnime(this)">👍 <span>0</span></button>
+            </div>
+            <div class="anime-card">
+                <h3>2. Jujutsu Kaisen</h3>
+                <p>Школьник Итадори Юдзи присоединяется к магической школе, чтобы бороться с проклятыми духами.</p>
+                <button onclick="likeAnime(this)">👍 <span>0</span></button>
+            </div>
+            <div class="anime-card">
+                <h3>3. Spy x Family</h3>
+                <p>Шпион вынужден создать фиктивную семью, чтобы выполнить опасную миссию.</p>
+                <button onclick="likeAnime(this)">👍 <span>0</span></button>
+            </div>
+        </section>
+
+        <section id="register" class="tab-content">
+            <h2>Регистрация</h2>
+            <input type="text" id="reg-username" placeholder="Ваше имя">
+            <button onclick="register()">Зарегистрироваться</button>
+            <p id="registration-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anime Community. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
