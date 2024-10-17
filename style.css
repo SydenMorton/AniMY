@@ -25,7 +25,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 25px; /* Увеличено расстояние между кнопками */
 }
 
 nav a {
@@ -96,12 +96,14 @@ footer {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    margin: 10px 0; /* Увеличено расстояние между кнопками */
 }
 
 .btn:hover {
     background-color: #ff3f20;
     transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 input {
