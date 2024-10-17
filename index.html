@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Community</title>
+    <title>AniHunt</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Anime Community</h1>
+        <h1>AniHunt</h1>
         <nav>
             <ul>
                 <li><a href="#" class="active" data-tab="home">Главная</a></li>
@@ -22,7 +22,7 @@
     
     <main>
         <section id="home" class="tab-content active">
-            <h2>Добро пожаловать в Anime Community!</h2>
+            <h2>Добро пожаловать в AniHunt!</h2>
             <p>Здесь вы можете обсуждать любимые аниме и делиться мнениями.</p>
         </section>
 
@@ -31,7 +31,7 @@
             <div id="comments">
                 <div id="user-info" style="display: none;">
                     <p id="welcome-message"></p>
-                    <button onclick="logout()">Выйти</button>
+                    <button class="btn" onclick="logout()">Выйти</button>
                 </div>
                 <div id="login-form" style="display: block;">
                     <input type="text" id="username" placeholder="Ваше имя">
@@ -74,7 +74,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Anime Community. Все права защищены.</p>
+        <p>&copy; 2024 AniHunt. Все права защищены.</p>
     </footer>
 
     <script src="script.js"></script>
